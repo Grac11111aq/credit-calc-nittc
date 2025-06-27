@@ -1,12 +1,10 @@
-# Create T3 App
+# gemini-cli-webui
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This project aims to provide a web-based user interface for the `gemini-cli`.
 
-## What's next? How do I make an app with this?
+It is implemented using the [T3 Stack](https://create.t3.gg/) and will start with a minimal viable implementation, adhering to the YAGNI principle.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Technologies Used
 
 - [Next.js](https://nextjs.org)
 - [NextAuth.js](https://next-auth.js.org)
@@ -15,15 +13,32 @@ If you are not familiar with the different technologies used in this project, pl
 - [Tailwind CSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
 
-## Learn More
+## Getting Started
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/Grac11111aq/gemini-cli-webui.git
+    cd gemini-cli-webui
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Set up environment variables:
+    Copy `.env.example` to `.env` and fill in the required values. For initial development, you can set `AUTH_SECRET` to any string and leave `AUTH_DISCORD_ID` and `AUTH_DISCORD_SECRET` empty (they are made optional in `src/env.js` for development).
+    ```bash
+    cp .env.example .env
+    ```
+4.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+    The application will be accessible at `http://localhost:3000`.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Project Scope
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+This project focuses on providing a web interface to interact with the `gemini-cli`. The initial implementation will be kept as minimal as possible, adding features incrementally as needed.
 
-## How do I deploy this?
+## Contributing
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Contributions are welcome! Please feel free to open issues or submit pull requests.
