@@ -1,4 +1,4 @@
-# NITTC Credit Calculator (仮)
+# credit-calc-nittc
 
 東京高専 (NITTC) の学生向け単位計算・履修管理アプリケーションです。
 T3 Stack を用いて開発しています。
